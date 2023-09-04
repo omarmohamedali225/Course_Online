@@ -1,0 +1,27 @@
+.errorPage{
+  min-height: calc(100vh - 156px);
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+.errorPage img{
+  width: 200px;
+}
+.errorPage h1{
+  color: var(--dark);
+  font-size: 30px;
+}
+.errorPage a{
+  background-color: var(--dark);
+  text-align: center;
+  color:white;
+  border-radius: 20px;
+  padding: .5rem 1rem;
+  font-weight: 600;
+  font-size: 24px;
+  transition: all .5s;
+}
+.errorPage a:hover{
+  background-color: #eee;
+  color:var(--dark);
+}

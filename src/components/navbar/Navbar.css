@@ -1,0 +1,88 @@
+/* start nav */
+nav{
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  background-color: #eee;
+}
+nav .navbar-brand{
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--dark);
+}
+nav .navbar-brand:hover{
+  color: var(--dark);
+}
+
+nav .navbar-brand img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+nav .nav-item .nav-link.active{
+  color: var(--dark);
+  position: relative;
+}
+nav .nav-link{
+  color: var(--dark);
+  position: relative;
+}
+nav .dropdown-menu li{
+  text-align: start;
+}
+nav .nav-link::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--dark);
+  bottom: 0;
+  left: 100%;
+  transform: translateX(-100%);
+  transition: .3s;
+}
+nav .nav-link:hover::before{
+  width: 100%;
+}
+nav .nav-link:hover{
+  color: var(--dark);
+}
+.navbar-nav .nav-link.active{
+  color: var(--dark);
+  font-weight: 600;
+}
+nav .navbar-toggler{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+}
+nav .navbar-toggler:is(:hover,:focus){
+  box-shadow: none;
+}
+nav .navbar-toggler span{
+  width: 30px;
+  height: 2px;
+  margin: 3.5px 0;
+  background-color: var(--dark);
+  transition: .3s;
+}
+nav .navbar-toggler span:nth-child(2){
+  width: 15px;
+  height: 2px;
+  margin: 3px 0;
+  background-color: var(--dark);
+}
+nav .navbar-toggler[aria-expanded='true'] span:nth-child(2){
+  width: 30px;
+}
+nav .nav-link .dropdown-toggle{
+  color: var(--dark);
+}
+nav .nav-link .dropdown-toggle:hover{
+  color: var(--dark);
+}
+@media (width<992px) {
+  nav .nav-link:hover::before{
+    width: 0;
+  }
+}
+/* end nav */

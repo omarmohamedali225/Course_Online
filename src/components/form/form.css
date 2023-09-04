@@ -1,0 +1,33 @@
+.login{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--dark); */
+}
+.login .card{
+  width: 100%;
+  max-width: 400px;
+}
+.login input{
+  border: 1px solid;
+}
+.login a{
+  text-decoration: none;
+}
+/* .login .alert{
+  display: none;
+} */
+.login a:hover{
+  text-decoration: underline;
+}
+.login .password{
+  position: relative;
+}
+.login .password i{
+  position: absolute;
+  top: 43px;
+  left: 6px;
+  cursor: pointer;
+}

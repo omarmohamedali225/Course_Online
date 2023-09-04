@@ -1,0 +1,42 @@
+header{
+  width: 100%;
+  height: calc(100vh - 76px);
+  background-color: rgba(25, 73, 162, 0.269);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header .container{
+  z-index: 1;
+}
+header h1{
+  width: 80%;
+  margin: auto;
+  color: var(--dark);
+  margin-top: -80px;
+}
+header h5{
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  color: var(--black);
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+header svg{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+header a.btn{
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 2px solid var(--dark);
+  color: var(--dark);
+  min-width: fit-content;
+}
+header a.btn:hover{
+  background-color: var(--dark);
+  color: white;
+}

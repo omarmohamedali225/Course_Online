@@ -1,0 +1,38 @@
+.ball{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--dark);
+  display: grid;
+  place-items: center;
+  color: white;
+  bottom: 10px;
+  right: -40px;
+  cursor: pointer;
+  z-index: 99999;
+  transition: all .5s;
+}
+.ball:hover{
+  background-color: var(--dark);
+}
+.ball.active{
+  right: 10px;
+}
+.ball svg{
+  animation: ball .7s infinite linear;
+}
+@keyframes ball {
+  0%{
+    transform: scale(1) translateY(0);
+  }
+  25%{
+    transform: scale(1.1) translateY(2px);
+  }
+  75%{
+    transform: scale(1.2) translateY(-2px);
+  }
+  100%{
+    color: var(--dark);
+  }
+}
